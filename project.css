@@ -1,0 +1,14 @@
+p {
+	color: navy;
+}
+a:link {
+    color:purple;
+  }
+  
+  a:visited {
+    color: gray;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
