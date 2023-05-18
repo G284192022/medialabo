@@ -200,6 +200,8 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こうconsole.log(data.results.shop.name);
+let i=document.querySelector('p#result');
 for(let n of data.results.shop){
-  console.log(n.name);
+  i.textContent=n.name;
 }
+
