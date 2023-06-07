@@ -3,31 +3,24 @@
    <head>
       <meta charset="utf-8">
       <title>グルメ情報</title>
+      <!--<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
       <link rel="stylesheet" href="project.css">
-      <script src="gourmet.js" defer></script>
+      <script src="project.js" defer></script>
       
     </head>
     <body>
-      <h1>お役立ち！グルメ情報まとめ</h1>
-      <label for="tenmei">ジャンルを入力:</label>
-    <input type="search" name="tenmei" id="tenmei" size="10">
+      
+      <h1>お役立ち！グルメ情報検索</h1>
+      <label for="genre">ジャンルを入力:</label>
+    <input type="search" name="genre" id="genre" size="10"onfocus="this.select();">
     <button id="print">検索</button>
-      <p id="result"></p>
-        <table>
-            <colgroup span="4"></colgroup>
-            <tr>
-              <th>ジャンル</th>
-              <th>店名</th>
-            </tr>
-            <tr>
-              <td>和食</td>
-              <td>すき家</td>
-            </tr>
-            <tr>
-              <td>洋食</td>
-              <td>ジョリーパスタ</td>
-            </tr>
-          </table>
-          
+    <div id="result">
+      <h3>ジャンルには次が含まれます</h3>
+      <p id="result">居酒屋<br>ダイニングバー・バル<br>創作料理<br>和食<br>洋食<br>イタリアン・フレンチ<br>中華<br>焼肉・ホルモン<br>アジア・エスニック料理<br>各国料理<br>カラオケ・パーティ<br>バー・カクテル<br>ラーメン<br>カフェ・スイーツ<br>その他グルメ<br>お好み焼き・もんじゃ<br>韓国料理
+        </p>
+    </div>
+ 
+        
     </body>
 </html>

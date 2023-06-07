@@ -1,6 +1,22 @@
 p {
 	color: navy;
 }
+
+body{
+  background-color: #b6d597;
+  text-align:center;
+}
+h1{
+  background-color: #169ccc;
+  border: 5px solid #375e97;
+}
+h2{
+  color:#e81111;
+}
+h3{
+  color:#68e520;
+    background:linear-gradient(0.25turn,#f9faf8,#79ddf0,#4861ef,#79ddf0,#f9faf8);
+}
 a:link {
     color:purple;
   }

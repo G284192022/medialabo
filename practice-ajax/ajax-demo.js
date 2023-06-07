@@ -5,14 +5,19 @@ b.addEventListener('click', sendRequest);
 // 通信を開始する処理
 function sendRequest() {
 	// URL を設定
+	let genre ='G001'
 	let url = 'https://www.nishita-lab.org/web-contents/jsons/test.json';
+	let url2='https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+genre+'.json';
+	let url3='https://www.nishita-lab.org/web-contents/jsons/hotpepper/G001.json';
 
 	// 通信開始
-	axios.get(url)
+
+	axios.get(url2)
 		.then(showResult)
 		.catch(showError)
 		.then(finish);
 }
+
 
 // 通信が成功した時の処理
 function showResult(resp) {
@@ -28,7 +33,18 @@ function showResult(resp) {
 	console.log(data);
 
 	// data.x を出力
-	console.log(data.x);
+	for(let n of data.results.shop){
+		console.log(n.access);
+		console.log(n.address);
+		console.log(n.budget.name);
+		console.log(n.catch);
+		console.log(n.genre.name);
+		console.log(n.name);
+		console.log(n.open);
+		console.log(n.station_name);
+		console.log(n.subgenre_name);
+	  }
+
 }
 
 // 通信エラーが発生した時の処理
